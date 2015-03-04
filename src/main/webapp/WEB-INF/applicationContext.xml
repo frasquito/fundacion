@@ -21,9 +21,9 @@
 		id="emf" /> -->
 	<bean class="org.apache.commons.dbcp.BasicDataSource" id="dataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/incondicional_db" />
-		<property name="username" value="incondicional_db" />
-		<property name="password" value="w0s6C0NE" />
+		<property name="url" value="jdbc:mysql://localhost:3306/fundacion_db" />
+		<property name="username" value="fundacion_db" />
+		<property name="password" value="ARIari22" />
 	</bean>
 	<!-- entityManagerFactory -->
 	<bean
