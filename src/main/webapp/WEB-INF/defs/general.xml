@@ -31,5 +31,9 @@
     <put-attribute name="body" value="/WEB-INF/jsp/eventos.jsp" />
     <put-attribute name="current" value="eventos"/>
   </definition>
-	
+	<definition name="config" extends="common">
+    <put-attribute name="title" value="Configuraciones" />
+    <put-attribute name="body" value="/WEB-INF/jsp/config.jsp" />
+    <put-attribute name="current" value="config"/>
+  </definition>
 </tiles-definitions>

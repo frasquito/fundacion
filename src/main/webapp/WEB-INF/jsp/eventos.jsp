@@ -17,7 +17,7 @@
 			<tr>
 				<td><a href='<spring:url value="/evento/${evento.id}.html"/>'>${evento.titulo}</a>
 				</td>
-				  <td>${evento.imagen}</td>
+				<td>${evento.imagen}</td>
 				<td>${evento.detalle}</td>
 				<td>${evento.fechaPublicado}</td>
 			</tr>

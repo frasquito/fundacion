@@ -26,7 +26,7 @@
 <title><tiles:getAsString name="title"></tiles:getAsString></title>
 </head>
 <body>
-	<div id="container">
+	<div class="container">
 	<!-- Static navbar -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -45,6 +45,7 @@
               <li class="${current == 'users'? 'active':''}"><a href='<spring:url value="/users.html"/>'>Users</a></li>
                <li class="${current == 'eventos'? 'active':''}"><a href='<spring:url value="/eventos.html"/>'>Eventos</a></li>
               <li class="${current == 'register'? 'active':''}"><a href='<spring:url value="/register.html"/>'>Register</a></li>
+               <li class="${current == 'config'? 'active':''}"><a href='<spring:url value="/config.html"/>'>Config</a></li>
               
           
             </ul>

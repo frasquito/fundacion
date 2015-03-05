@@ -19,8 +19,8 @@ public class DbService {
 	
 	@PostConstruct
 	public void init(){
-		User user=new User();
-		user.setName("Norberto");
-		userRepository.save(user);
+		//User user=new User();
+		//user.setName("Norberto");
+		//userRepository.save(user);
 	}
 }

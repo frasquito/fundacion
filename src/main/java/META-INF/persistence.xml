@@ -2,5 +2,15 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="fundacion">
 		<class>com.xicosys.fundacion.entity.User</class>
+		<class>com.xicosys.fundacion.entity.Categoria</class>
+		<class>com.xicosys.fundacion.entity.Consulta</class>
+		<class>com.xicosys.fundacion.entity.Deposito</class>
+		<class>com.xicosys.fundacion.entity.Donacione</class>
+		<class>com.xicosys.fundacion.entity.Imagene</class>
+		<class>com.xicosys.fundacion.entity.Nota</class>
+		<class>com.xicosys.fundacion.entity.Pagina</class>
+		<class>com.xicosys.fundacion.entity.Pedido</class>
+		<class>com.xicosys.fundacion.entity.Punto</class>
+		<class>com.xicosys.fundacion.entity.Slide</class>
 	</persistence-unit>
 </persistence>
