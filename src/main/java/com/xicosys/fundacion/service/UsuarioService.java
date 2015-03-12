@@ -5,28 +5,27 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.xicosys.fundacion.entity.User;
-import com.xicosys.fundacion.repository.UserRepository;
+import com.xicosys.fundacion.entity.Usuario;
+import com.xicosys.fundacion.repository.UsuarioRepository;
 
 @Service
 @Transactional
-public class UserService {
+public class UsuarioService {
 
 	@Autowired
-	private UserRepository userRepository;
+	private UsuarioRepository userRepository;
 	
-	public List<User> findALL(){
+	public List<Usuario> findALL(){
 		return userRepository.findAll();
 	}
 
-	public User findOne(int id) {
+	public Usuario findOne(int id) {
 		
 		return userRepository.findOne(id);
 	}
 
-	public void save(User user) {
-		userRepository.save(user);
+	public void save(Usuario usuario) {
+		userRepository.save(usuario);
 		
 	}
 }

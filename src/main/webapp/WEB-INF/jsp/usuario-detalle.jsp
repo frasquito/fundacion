@@ -2,4 +2,4 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../layout/taglib.jsp" %>
 
-<h1>${user.name}</h1>
+<h1>${usuario.nombre}</h1>

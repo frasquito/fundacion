@@ -6,21 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.xicosys.fundacion.entity.User;
-import com.xicosys.fundacion.repository.UserRepository;
+import com.xicosys.fundacion.entity.Usuario;
+import com.xicosys.fundacion.repository.UsuarioRepository;
 
 @Transactional
 @Service
 public class DbService {
 
 	@Autowired
-	private UserRepository userRepository;
+	private UsuarioRepository userRepository;
 	
 	
 	@PostConstruct
 	public void init(){
-		//User user=new User();
-		//user.setName("Norberto");
-		//userRepository.save(user);
+		Usuario user=new Usuario();
+		user.setNombre("Norberto");
+		userRepository.save(user);
 	}
 }

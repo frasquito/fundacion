@@ -21,8 +21,8 @@
 		id="emf" /> -->
 	<bean class="org.apache.commons.dbcp.BasicDataSource" id="dataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/fundacion_db" />
-		<property name="username" value="fundacion_db" />
+		<property name="url" value="jdbc:mysql://localhost:3306/fund_db" />
+		<property name="username" value="fund_db" />
 		<property name="password" value="ARIari22" />
 	</bean>
 	<!-- entityManagerFactory -->
@@ -35,7 +35,8 @@
 		 <property name="jpaProperties">
 			<props>
 				<prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.hbm2ddl.auto">create</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 				<prop key="hibernate.connection.charSet" >"UTF-8"</prop>
 			</props>
 		</property>
@@ -43,12 +44,13 @@
 		<bean class="org.hibernate.jpa.HibernatePersistenceProvider"/>
 		</property>	
 	</bean> 
-	<!-- Transaction Manager -->
-	<bean class="org.springframework.orm.jpa.JpaTransactionManager"
-		id="transactionManager">
-		<property name="entityManagerFactory" ref="entityManagerFactory" />
-	</bean>
-	<tx:annotation-driven />
-	<jpa:repositories base-package="com.xicosys.fundacion.repository"
-		entity-manager-factory-ref="entityManagerFactory" transaction-manager-ref="transactionManager"/>
+  <!-- Transaction Manager -->
+  <bean class="org.springframework.orm.jpa.JpaTransactionManager"
+    id="transactionManager">
+    <property name="entityManagerFactory" ref="entityManagerFactory" />
+  </bean>
+  <tx:annotation-driven />
+  <jpa:repositories base-package="com.xicosys.fundacion.repository"
+    entity-manager-factory-ref="entityManagerFactory"
+    transaction-manager-ref="transactionManager" />
 </beans>

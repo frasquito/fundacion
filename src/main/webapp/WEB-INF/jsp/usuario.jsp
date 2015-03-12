@@ -6,13 +6,13 @@
 <table class="table table-bodered table-hover table-striped">
   <thead>
     <tr>
-      <th>User name</th>
+      <th>Nombre Usuario</th>
     </tr>
   </thead>
   <tbody>
-    <c:forEach items="${users}" var="user">
+    <c:forEach items="${usuarios}" var="usuario">
       <tr>
-        <td><a href='<spring:url value="/users/${user.id}.html"/>'> ${user.name}</a>
+        <td><a href='<spring:url value="/usuario/${usuario.id}.html"/>'> ${usuario.nombre}</a>
         <td>
       </tr>
     </c:forEach>
